@@ -1,0 +1,6 @@
+nome = input('\033[34m Nome Completo: ').strip()
+print('\033[35m Seu nome com todas as letras maiúsculas: {}'.format(nome.upper()))
+print('\033[33m Seu nome com todas as letras minúsculas: {}'.format(nome.lower()))
+print('\033[31m Seu nome tem {} letras'.format(len(nome)-nome.count(' ')))
+dividido = nome.split()
+print('\033[;7m Seu primeiro nome tem {} letras'.format(len(dividido[0])))
